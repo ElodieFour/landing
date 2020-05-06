@@ -1,0 +1,361 @@
+/* Write some CSS below */
+body {
+	font-family: Courier;
+	font-size: 18px;
+	color: rgb(30,30,30);
+	background-color: rgb(220,217,218);
+	margin: 0px;
+} 
+
+h1, h2{
+	font-family: 'Old Standard TT', serif;
+	color: white;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	font-family: 'Old Standard TT', serif;
+	font-weight: bold;
+}
+a:hover {
+	color: white;
+}
+
+h3{
+	font-family: 'Paprika', cursive;
+}
+
+p{
+	font-family: 'Paprika', cursive;
+	font-size: 14px
+}
+
+
+
+
+/* Custom class design page 1 */
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(220,217,218);
+}
+
+
+
+.menu-deroulant, .menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+.menu-deroulant {
+    text-align: center;
+    margin: 0px;
+    margin-top: 20px;
+
+}
+.menu-deroulant li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-deroulant ul li {
+    display: inherit;
+
+}
+.menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+	font-family: Courrier;
+
+}
+
+.menu-deroulant a:hover {
+  
+  overflow: hidden;
+  background-color: white;
+
+}
+
+.menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	border-radius: 6px;
+  	background-color: rgb(220,217,218);
+
+}
+.menu-deroulant li:hover ul {
+    left: auto;
+
+}
+
+.logo{
+	width: 150px;
+  	height: 50px; 
+  	margin-top: -60px;	
+  	position: right;
+
+}
+
+.id{
+	width: 40px;
+  	height: 40px;
+  	border-radius: 40%;
+    overflow: hidden;
+    float: right;
+    position: relative;
+  	right: 0%;
+  	margin:0 20px;
+  	margin-top: -30px; 	
+}
+
+.basket{
+	width: 45px;
+  	height: 50px;
+  	border-radius: 40%;
+    overflow: hidden;
+    float: right;
+    position: relative;
+  	right: 0%;
+  	margin:0 20px;
+  	margin-top: -30px;
+  	
+}
+
+
+.btn-green {
+	background-color: #019875;
+	color: black;
+	padding: 10px 15px;
+	border-radius: 10px;
+}
+
+.banner {
+	background-image: url(images/background.jpeg);
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 100px 0px;
+}
+
+.banner h1{
+	font-size: 60px;
+	margin-bottom: 0.5px;
+	margin-top: -10px;
+}
+
+.banner h2{
+	font-size:27px;
+	opacity: 0.9;
+	margin-bottom:50px;
+
+}
+
+.box{
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr;
+	grid-gap: 16px;	
+}
+
+.box-white{
+	background-color: #5DB39F;
+	box-shadow:1px 1px 10px rgba(0,0,0.1);
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+	margin: 20px;
+}
+
+.box-white img{
+	width: 430px;
+  	height: 285px;
+  	object-fit: cover;
+  	border-radius: 4px;
+}
+
+.box-white h3{
+	margin-bottom: 0;
+}
+
+
+.container h2 {
+	margin-left: 20px;
+	color: black
+}
+
+/* Media queries */
+/* Box */
+@media (max-width: 800px) {
+.box {
+    grid-template-columns: 1fr;
+}
+
+.card-white {
+    width: auto;
+  }
+}
+
+/* Container */
+@media (min-width: 500px) {
+.container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+.container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+.container {
+    width: 800px;
+  }
+}
+
+/* Custom class design page 2 */
+.bannerpage2 {
+	background-image: url(images/banner2.jpeg);
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 130px 0px;
+}
+
+.bannerpage2 h2 {
+	
+	font-size:40px;
+	opacity: 0.9;
+}
+
+
+.box2{
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+
+.box-green{
+	background-color: #5DB39F;
+	box-shadow:1px 1px 10px rgba(0,0,0.1);
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+	margin: 20px;
+}
+
+.box-green img{
+	width: 430px;
+  	height: 285px;
+  	object-fit: cover;
+  	border-radius: 4px;
+}
+
+.box-green h3{
+	margin-bottom: 0;
+	color: white;
+}
+
+.container2 h2 {
+	margin-left: 20px;
+	color: black;
+}
+
+/* footer */
+
+.footer{
+	background-color: white;
+	text-align: center;
+	padding: 50px;
+}
+
+
+.fb{
+	width: 50px;
+  	height: 50px;
+  	border-radius: 40%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+  	right: 0%;
+  	margin:0 10px;
+  	margin-top: -10px;
+  	margin-top: -25px;	
+
+}
+
+.inst{
+	width: 50px;
+  	height: 50px;
+  	border-radius: 40%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+  	right: 0%;
+  	margin:0 10px;
+  	margin-top: -10px;
+  	margin-top: -25px;	
+}
+
+.yt{
+	width: 50px;
+  	height: 50px;
+  	border-radius: 40%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+  	right: 0%;
+  	margin:0 10px; 	
+  	margin-top: -10px;
+  	margin-top: -25px;	
+}
+
+.globe{
+	width: 50px;
+  	height: 50px;
+  	border-radius: 40%;
+    overflow: hidden;
+    float: right;
+    position: relative;
+  	right: 0%;
+  	margin:0 10px; 
+  	margin-top: -25px;	
+}
+
+.footer p{
+	float: right;
+	margin-top: -10px;
+}
+
+.bottom {
+    text-align: center ;
+    margin: 0px;
+    margin-top: -20px;
+}
+
+.bottom a:hover {
+  overflow: hidden;
+  background-color: #5DB39F;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
