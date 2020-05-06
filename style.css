@@ -230,7 +230,6 @@ p{
 }
 
 .bannerpage2 h2 {
-	
 	font-size:40px;
 	opacity: 0.9;
 }
@@ -329,10 +328,15 @@ p{
   	margin-top: -25px;	
 }
 
+
+
 .footer p{
 	float: right;
 	margin-top: -10px;
+	color: black;
+	font-size: 12px;
 }
+
 
 .bottom {
     text-align: center ;
